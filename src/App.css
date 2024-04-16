@@ -1,0 +1,33 @@
+/* App.css */
+* {
+  max-width: 1280px;
+  /* margin: 0px auto; */
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+body {
+  background-color: #fefefe;
+}
+
+.page-title {
+font-size: 3em;
+font-weight: 700;
+color: #e9ede2;
+text-align: center;
+}
+
+/* ---ITEM-CARD--- */
+.item-img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  background-position: center;
+}
+.item-price {
+margin-right: 0px;
+}
+
+
+
+

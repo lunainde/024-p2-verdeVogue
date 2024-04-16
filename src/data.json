@@ -1,0 +1,110 @@
+[
+    {
+        "item_id": "A01",
+        "item_name": "Eco-Aroma",
+        "item_category": "accessories",
+        "item_description": "Description from ultra soft and shiny lamb shearling, this eye-catching piece showcases the season’s rope motif. Here, they attach the removable front pocket and hood on a loose-fitting shape inspired by the classic sweatshirt.",
+        "item_price": "€10.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1588959570984-9f1e0e9a91a6?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "A02",
+        "item_name": "Manantial Water",
+        "item_category": "accessories",
+        "item_description": "Description from ultra soft and shiny lamb shearling, this eye-catching piece showcases the season’s rope motif. Here, they attach the removable front pocket and hood on a loose-fitting shape inspired by the classic sweatshirt.",
+        "item_price": "€16.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "A03",
+        "item_name": "His Eco Set",
+        "item_category": "accessories",
+        "item_description": "Description from ultra soft and shiny lamb shearling, this eye-catching piece showcases the season’s rope motif. Here, they attach the removable front pocket and hood on a loose-fitting shape inspired by the classic sweatshirt.",
+        "item_price": "€28.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://plus.unsplash.com/premium_photo-1661320893912-46f983307995?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "H01",
+        "item_name": "Scandinavian Touch",
+        "item_category": "home",
+        "item_description": "Convallis ornare proin morbi curae augue metus dui magna habitant eu, consequat aliquam tincidunt sodales nibh dictumst euismod maecenas at, sed quisque etiam ultricies platea ante tortor netus quis. Etiam mauris sollicitudin.",
+        "item_price": "€1900.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "H02",
+        "item_name": "Morning Set",
+        "item_category": "home",
+        "item_description": "Convallis ornare proin morbi curae augue metus dui magna habitant eu, consequat aliquam tincidunt sodales nibh dictumst euismod maecenas at, sed quisque etiam ultricies platea ante tortor netus quis. Etiam mauris sollicitudin.",
+        "item_price": "€36.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1592923750193-0caa23a10e1f?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "H03",
+        "item_name": "Give it a Touch",
+        "item_category": "home",
+        "item_description": "Convallis ornare proin morbi curae augue metus dui magna habitant eu, consequat aliquam tincidunt sodales nibh dictumst euismod maecenas at, sed quisque etiam ultricies platea ante tortor netus quis. Etiam mauris sollicitudin.",
+        "item_price": "€320.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "L01",
+        "item_name": "Overall Me",
+        "item_category": "look",
+        "item_description": "Convallis ornare proin morbi curae augue metus dui magna habitant eu, consequat aliquam tincidunt sodales nibh dictumst euismod maecenas at, sed quisque etiam ultricies platea ante tortor netus quis. Etiam mauris sollicitudin.",
+        "item_price": "€92.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1572577892547-18d319fcece6?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "L02",
+        "item_name": "T-Cotton",
+        "item_category": "look",
+        "item_description": "Convallis ornare proin morbi curae augue metus dui magna habitant eu, consequat aliquam tincidunt sodales nibh dictumst euismod maecenas at, sed quisque etiam ultricies platea ante tortor netus quis. Etiam mauris sollicitudin.",
+        "item_price": "€19.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    },
+    {
+        "item_id": "L03",
+        "item_name": "Choco Bundle",
+        "item_category": "look",
+        "item_description": "Convallis ornare proin morbi curae augue metus dui magna habitant eu, consequat aliquam tincidunt sodales nibh dictumst euismod maecenas at, sed quisque etiam ultricies platea ante tortor netus quis. Etiam mauris sollicitudin.",
+        "item_price": "€78.00",
+        "item_size": ["S", "M", "L"],
+        "item_color": "Natural",
+        "item_origin": "Made in Europe",
+        "item_image_url": "https://images.unsplash.com/photo-1542601600647-3a722a90a76b?w=800",
+        "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
+    }
+]
