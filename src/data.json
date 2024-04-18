@@ -8,6 +8,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Panda",
         "item_image_url": "https://images.unsplash.com/photo-1588959570984-9f1e0e9a91a6?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -20,6 +21,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Norm",
         "item_image_url": "https://images.unsplash.com/photo-1589365278144-c9e705f843ba?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -32,6 +34,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Five12",
         "item_image_url": "https://plus.unsplash.com/premium_photo-1661320893912-46f983307995?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -44,6 +47,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Virtue",
         "item_image_url": "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -56,6 +60,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Virtue",
         "item_image_url": "https://images.unsplash.com/photo-1592923750193-0caa23a10e1f?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -68,6 +73,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Virtue",
         "item_image_url": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -80,6 +86,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Folk",
         "item_image_url": "https://images.unsplash.com/photo-1572577892547-18d319fcece6?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -92,6 +99,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Folk",
         "item_image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     },
@@ -104,6 +112,7 @@
         "item_size": ["S", "M", "L"],
         "item_color": "Natural",
         "item_origin": "Made in Europe",
+        "item_brand": "Folk",
         "item_image_url": "https://images.unsplash.com/photo-1542601600647-3a722a90a76b?w=800",
         "item_care": "Lorem ipsum dolor sit amet consectetur adipiscing elit velit nullam, metus curabitur laoreet nisl ornare molestie habitant dapibus purus, accumsan magna aliquam auctor leo consequat dignissim mus."
     }

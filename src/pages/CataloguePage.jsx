@@ -7,14 +7,42 @@ import Grid from "@mui/material/Grid";
 import ItemCard from "../components/ItemCard";
 import data from "../data.json";
 import Header from "../components/Header";
+import { useState } from "react";
+import Sort from '../components/Sort';
+import { Typography } from "@mui/material";
+import MainTitle from '../components/MainTitle';
 
-export default function CataloguePage() {
-  const [categoryFilter, setCategoryFilter] = React.useState("all"); //filter stating point
+export default function CataloguePage({ categoryFilter, setCategoryFilter }) {
+
+  const [sortedData, setSortedData] = useState(data.sort((a, b) => a.item_name.localeCompare(b.item_name))); // Default sort
+
+  const handleSortChange = (sortOption) => {
+    const sorted = [...sortedData].sort((a, b) => {
+      // Example sorting by name, apply similar logic for price and brand
+      if (sortOption === 'NAME_ASC') {
+        return a.item_name.localeCompare(b.item_name);
+      } else if (sortOption === 'NAME_DESC') {
+        return b.item_name.localeCompare(a.item_name);
+      } else if (sortOption === 'PRICE_ASC') {
+        return parseFloat(a.item_price.replace('€', '')) - parseFloat(b.item_price.replace('€', ''));
+      } else if (sortOption === 'PRICE_DESC') {
+        return parseFloat(b.item_price.replace('€', '')) - parseFloat(a.item_price.replace('€', ''));
+      } else if (sortOption === 'BRAND_ASC') {
+        return a.item_brand.localeCompare(b.item_brand);
+      }
+      return 0;
+    });
+    setSortedData(sorted);
+  };
 
   return (
     <div>
-      <Header setCategoryFilter={setCategoryFilter} />
-      <h2 className="page-title">our collection</h2>
+    <MainTitle><span>verde</span>COLLECTION</MainTitle>
+      
+    <Box sx={{ display: 'flex', justifyContent: 'flex-end', mr: 2 }}>
+        <Sort onSortChange={handleSortChange} />
+    </Box>
+
       <section>
         <Box sx={{ my: 6, flexGrow: 1 }}>
           <Grid
@@ -22,19 +50,20 @@ export default function CataloguePage() {
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            {data
+            {sortedData
               .filter(
                 (item) =>
                   categoryFilter === "all" ||
                   item.item_category === categoryFilter
               )
               .map((item) => (
-                <Grid item xs={2} sm={4} md={4} key={item.item_id}>
+                <Grid item xs={12} sm={4} md={4} key={item.item_id}>
                   <ItemCard
                     img={item.item_image_url}
                     name={item.item_name}
                     price={item.item_price}
                     category={item.item_category}
+                    brand={item.item_brand}
                   />
                 </Grid>
               ))}

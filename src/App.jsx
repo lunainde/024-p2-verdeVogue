@@ -5,7 +5,7 @@ import './App.css'
 import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme'; 
-// import Header from './components/Header';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage';
@@ -16,13 +16,16 @@ import data from './data.json';
 
 
 function App() {
+  const [categoryFilter, setCategoryFilter] = useState("all");
+
   return (
-    <Container>
+    <Container sx={{ maxWidth: 'lg', mx: 'auto' }}>
     <ThemeProvider theme={theme}>
+    <Header setCategoryFilter={setCategoryFilter} />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catalogue" element={<CataloguePage />} />
-        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/catalogue" element={<CataloguePage categoryFilter={categoryFilter} setCategoryFilter={setCategoryFilter} />} />
+        <Route path="/product/:id" element={<ProductPage setCategoryFilter={setCategoryFilter} />} />
         <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
       <Footer />

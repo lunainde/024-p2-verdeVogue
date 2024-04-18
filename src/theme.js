@@ -26,13 +26,13 @@ const theme = createTheme ({
     },
     
     typography: {
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: '"Lato", sans-serif',
         body1: {
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Lato", sans-serif',
             color: '#222',
         },
           body2: {
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Lato", sans-serif',
             color: '#fefefe',
         },
         h1: {

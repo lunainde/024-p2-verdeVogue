@@ -1,11 +1,17 @@
 /* App.css */
 * {
-  max-width: 1280px;
-  /* margin: 0px auto; */
+  margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 400;
+  color: #222;
+}
+
 body {
   background-color: #fefefe;
 }
@@ -24,10 +30,5 @@ text-align: center;
   object-fit: cover;
   background-position: center;
 }
-.item-price {
-margin-right: 0px;
-}
-
-
 
 

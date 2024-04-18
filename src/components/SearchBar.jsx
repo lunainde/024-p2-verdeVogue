@@ -1,4 +1,4 @@
-// import React from 'react'
+//components/SeachBar
 
 import * as React from "react";
 import { styled, alpha } from "@mui/material/styles";
@@ -13,10 +13,17 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import { Divider } from "@mui/material";
+import { Link } from "react-router-dom";
+import icono from '../assets/icono.svg'; 
+
+
+
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -88,8 +95,9 @@ export default function SearchBar() {
       elevation={0}
       anchorEl={anchorEl}
       anchorOrigin={{
-        vertical: "top",
+        vertical: "bottom",
         horizontal: "right",
+        
       }}
       id={menuId}
       keepMounted
@@ -102,15 +110,22 @@ export default function SearchBar() {
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <Divider/>
+      <MenuItem onClick={handleMenuClose}>Wishlist</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Purchases</MenuItem>
+      <Divider/>
+      <MenuItem onClick={handleMenuClose}>Help</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
     </Menu>
   );
 
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <Menu
+      elevation={0}
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
-        vertical: "top",
+        vertical: "bottom",
         horizontal: "right",
       }}
       id={mobileMenuId}
@@ -124,21 +139,21 @@ export default function SearchBar() {
     >
       <MenuItem>
         <IconButton>
-          <ShoppingBagIcon fontSize="large" />
+          <ShoppingBagOutlinedIcon />
         </IconButton>
-        <p>Notifications</p>
+        Cart
       </MenuItem>
 
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
-          size="large"
+          size="small"
           aria-label="account of current user"
           aria-controls="primary-search-account-menu"
           aria-haspopup="true"
         >
-          <AccountCircle />
+          <AccountCircleOutlinedIcon />
         </IconButton>
-        <p>Profile</p>
+        Profile
       </MenuItem>
     </Menu>
   );
@@ -154,57 +169,58 @@ export default function SearchBar() {
         }}
       >
         <Toolbar>
-          {/* Left Section: Menu and Search */}
+          {/* Left Section: Home and Search */}
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <IconButton
-              size="large"
-              edge="start"
+              size="small"
               color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2, color: "common.black" }}
-            >
-              <MenuIcon />
+              aria-label="home"
+              sx={{ color: "common.black", width: '48px' }} >
+              <Link to="/" >
+                <img src={icono} alt="Home" />
+              </Link>
             </IconButton>
-
-            <Search sx={{ flexGrow: 1, display: { md: "block", flexGrow: 1 } }}>
-              <SearchIconWrapper sx={{ flexGrow: 1 }}>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Search…"
-                inputProps={{ "aria-label": "search" }}
-                sx={{ flexGrow: 1 }}
-              />
-            </Search>
           </Box>
 
           {/* Spacer Element */}
           <Typography
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          />
+            sx={{
+              flexGrow: 1,
+              display: 'flex',
+              justifyContent: 'center', 
+              alignItems: 'center',     
+              fontFamily: 'PT Sans Caption, sans-serif',
+              fontWeight: 'bold',       
+              fontSize: '1.5rem',       
+              color: 'black',           
+              '& span': {
+                color: 'green',         
+          }}}>
+            <span>verde</span>Vogue
+          </Typography>
 
-          {/* Right Section: Icons */}
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          {/* Right Section: Cart & User */}
+          <Box sx={{ display: { xs: "none", md: "flex"  } }}>
             <IconButton
               size="large"
               aria-label="show 2 new notifications"
               color="inherit"
             >
               <Badge badgeContent={2} color="primary">
-                <ShoppingBagIcon fontSize="medium" />
+                <ShoppingBagOutlinedIcon fontSize="medium" />
               </Badge>
             </IconButton>
 
             <IconButton
               size="small"
-              edge="end"
+              // edge="end"
               aria-label="account of current user"
               aria-controls={menuId}
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <AccountCircleOutlinedIcon sx={{ width: '40px'}} />
             </IconButton>
           </Box>
 

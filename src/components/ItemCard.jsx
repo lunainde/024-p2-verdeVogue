@@ -10,7 +10,7 @@ import { red } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import data from '../data.json';
 
-export default function ItemCard({ name, price, category, img }) {
+export default function ItemCard({ name, price, category, img, brand }) {
   return (
     <Card
       elevation={0}
@@ -27,6 +27,8 @@ export default function ItemCard({ name, price, category, img }) {
         <Typography variant="inherited" color="text.secondary">
           <h3>{name}</h3>
           <div>{category}</div>
+          <div>by {brand}</div>
+      
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
