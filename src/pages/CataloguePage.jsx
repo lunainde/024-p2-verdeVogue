@@ -6,7 +6,6 @@ import theme from "../theme";
 import Grid from "@mui/material/Grid";
 import ItemCard from "../components/ItemCard";
 import data from "../data.json";
-import Header from "../components/Header";
 import { useState } from "react";
 import Sort from '../components/Sort';
 import { Typography } from "@mui/material";
@@ -18,7 +17,7 @@ export default function CataloguePage({ categoryFilter, setCategoryFilter }) {
 
   const handleSortChange = (sortOption) => {
     const sorted = [...sortedData].sort((a, b) => {
-      // Example sorting by name, apply similar logic for price and brand
+      //sorting
       if (sortOption === 'NAME_ASC') {
         return a.item_name.localeCompare(b.item_name);
       } else if (sortOption === 'NAME_DESC') {
@@ -36,8 +35,27 @@ export default function CataloguePage({ categoryFilter, setCategoryFilter }) {
   };
 
   return (
-    <div>
-    <MainTitle><span>verde</span>COLLECTION</MainTitle>
+  <div>
+    <Typography
+      variant="h1"
+      sx={{
+        fontSize: {
+          xs: '1.5rem',  
+          sm: '2.5rem',  
+          md: '3rem',    
+        },
+        fontWeight: 700,                   
+        fontFamily: '"PT Sans Caption", sans-serif', 
+        opacity: 0.1,                      
+        textAlign: 'center',    
+        mt: 8,                                
+        '& span': {
+          color: 'primary.main',            
+        }}}>
+
+      <span>verde</span>COLLECTION
+  </Typography>
+    {/* <MainTitle><span>verde</span>COLLECTION</MainTitle> */}
       
     <Box sx={{ display: 'flex', justifyContent: 'flex-end', mr: 2 }}>
         <Sort onSortChange={handleSortChange} />

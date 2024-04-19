@@ -1,21 +1,32 @@
 //Navbar.jsx
-import * as React from "react";
+// import * as React from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 
-export default function Navbar({ setCategoryFilter }) {
+export default function Navbar({ categoryFilter, setCategoryFilter }) {
   const navigate = useNavigate();
-  const [value, setValue] = React.useState("null");
+  const location = useLocation();
+  const [value, setValue] = React.useState("all");
   // toggle
   const [menuOpen, setMenuOpen] = React.useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  useEffect(() => {
+    // Reset filter when the pathname is not '/catalogue'
+    if (location.pathname !== '/catalogue') {
+      setValue(false);
+      setCategoryFilter(false);
+    }
+  }, [location, setCategoryFilter]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
